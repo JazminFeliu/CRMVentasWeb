@@ -11,4 +11,8 @@ public class ClienteDAO {
         cliente.setTelefono("un tel");
         return cliente; //MOCK libreria MOCKITO
     }
+
+    public static void guardarCliente(Cliente unClinente) {
+
+    }
 }

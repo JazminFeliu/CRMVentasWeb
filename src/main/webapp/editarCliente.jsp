@@ -31,13 +31,13 @@
     <title>CRMVEntas - <%=(idClientetexto.isEmpty())?"Crear":"Editar"%> Cliente</title>
     <style>
         body{padding:15px; background-color: darkgrey }
-        form{width: auto;}
-        form input{ margin-right: 5px; alignment: right;}
+        form{width: fit-content;}
+        form input{ margin-right: 5px; }
     </style>
 </head>
 <body>
 <h1><%=(idClientetexto.isEmpty())?"Crear":"Editar"%> Cliente</h1>
-<form action="buscarServlet" method="get">
+<form action="guardarClienteServlet" method="post">
     <label>ID Cliente: </label><input type="text" placeholder="ID Cliente" name="IdCliente" value="<%=idClientetexto%>" disabled/>
     <br /><br />
     <label>Nombre: </label><input type="text" placeholder="Nombre" name="nombre" value="<%=nombreCliente%>" />

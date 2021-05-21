@@ -7,6 +7,17 @@
 <body>
 <h1>Buscar clientes</h1>
 <br/>
+<%
+    String guardarParam = request.getParameter("guardar");
+%>
+<%
+    if(guardarParam!= null&& guardarParam.equals("ok")) {
+        out.println("<hr />");
+        out.println("Cliente guardado en la base de datos!");
+        out.println("<hr />");
+    }
+%>
+
 <form action="buscarServlet" method="get">
 <input type="search" name="nombreCliente" />
 <br /><br/>
