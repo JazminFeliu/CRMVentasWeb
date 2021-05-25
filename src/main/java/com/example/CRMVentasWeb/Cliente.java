@@ -12,20 +12,20 @@ public class Cliente {
     public Cliente() {
     }
 
-    public Cliente(String nombre, String cargo, String telefono, String empresa, String email) {
+    public Cliente(String nombre, String empresa,String cargo, String telefono, String email) {
         this.nombre = nombre;
+        this.empresa = empresa;
         this.cargo = cargo;
         this.telefono = telefono;
-        this.empresa = empresa;
         this.email = email;
     }
 
-    public Cliente(Integer idCliente, String nombre, String cargo, String telefono, String empresa, String email) {
+    public Cliente(Integer idCliente, String nombre, String empresa, String cargo, String telefono, String email) {
         this.idCliente = idCliente;
         this.nombre = nombre;
+        this.empresa = empresa;
         this.cargo = cargo;
         this.telefono = telefono;
-        this.empresa = empresa;
         this.email = email;
     }
 
